@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MA diagnostics SIA</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    section {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1, h2, h3, p {
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 64px;
+    }
+
+    h2 {
+      font-size: 42px;
+    }
+
+    h3 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 22px;
+      max-width: 1000px;
+      margin: 0 auto 20px auto;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+      url('https://plus.unsplash.com/premium_photo-1683120730432-b5ea74bd9047?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+      flex-direction: column;
+    }
+
+    .hero button {
+      padding: 15px 40px;
+      font-size: 22px;
+      background-color: #ffffff;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .about, .services, .advantages, .process, .contact {
+      background-color: #111;
+      flex-direction: column;
+    }
+
+    .services {
+      padding-bottom: 100px; /* ✅ Добавлен отступ снизу */
+    }
+
+    .services img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 10px;
+    }
+
+    .service-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .advantages .advantage-block,
+    .process .step {
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      width: 100%;
+      margin-top: 30px;
+    }
+
+    input, textarea {
+      padding: 15px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #ffffff;
+      color: #000;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e0e0e0;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- 1. GALVENAIS EKRĀNS -->
+  <section class="hero">
+    <h1>MA diagnostics SIA</h1>
+    <p>Mēs piedāvājam efektīvus risinājumus uzņēmumiem reklāmas, mārketinga, SEO un biznesa attīstības jomās. Mūsu komanda palīdz ne tikai izcelties tirgū, bet arī strauji augt.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView()">Sazināties ar mums</button>
+  </section>
+
+  <!-- 2. PAR MUMS -->
+  <section class="about">
+    <h2>Kāpēc izvēlēties mūs?</h2>
+    <p>MA diagnostics SIA apvieno stratēģisku domāšanu un datu analīzi, lai nodrošinātu mērķtiecīgus rezultātus. Mūsu pieredze vietējā un starptautiskā tirgū ļauj mums veidot kampaņas, kas patiešām darbojas. Mēs sadarbojamies ar maziem un vidējiem uzņēmumiem, nodrošinot pielāgotus un reālus risinājumus katram klientam. Uzsvars uz kvalitāti, pārredzamību un ilgtermiņa sadarbību. Mēs esam nevis tikai aģentūra – mēs esam jūsu partneri attīstībā.</p>
+  </section>
+
+  <!-- 3. MŪSU PAKALPOJUMI -->
+  <section class="services">
+    <h2>Ko mēs darām?</h2>
+
+    <div class="service-block">
+      <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=60" alt="Marketing">
+      <h3>Mārketinga stratēģijas</h3>
+      <p>Mēs izstrādājam individuālas stratēģijas, kas palīdz zīmolam izcelties un piesaistīt mērķauditoriju. Fokuss uz digitāliem kanāliem un mērķiem.</p>
+    </div>
+
+    <div class="service-block">
+      <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60" alt="SEO">
+      <h3>SEO optimizācija</h3>
+      <p>Palīdzam jūsu vietnei sasniegt augstākas pozīcijas Google meklētājā. Tehniskā analīze, satura uzlabošana un atslēgvārdu stratēģija.</p>
+    </div>
+
+    <div class="service-block">
+      <h3>Biznesa konsultācijas</h3>
+      <p>No idejas līdz izaugsmei – mēs sniedzam padziļinātu atbalstu, izvērtējam potenciālu un palīdzam pieņemt stratēģiskus lēmumus.</p>
+    </div>
+  </section>
+
+  <!-- 4. MŪSU PRIEKŠROCĪBAS -->
+  <section class="advantages">
+    <h2>Kāpēc sadarboties ar MA diagnostics?</h2>
+
+    <div class="advantage-block">
+      <h3>✓ Dziļa tirgus izpratne</h3>
+      <p>Mūsu komanda analizē jūsu nozari, konkurentus un klientu uzvedību, lai piedāvātu tieši jums piemērotus risinājumus.</p>
+    </div>
+
+    <div class="advantage-block">
+      <h3>✓ Radošums + Dati</h3>
+      <p>Apvienojam radošu pieeju ar datu analīzi, lai radītu kampaņas, kas ir gan iedarbīgas, gan izmērāmas.</p>
+    </div>
+
+    <div class="advantage-block">
+      <h3>✓ Ilgtermiņa partnerība</h3>
+      <p>Mēs koncentrējamies uz ilgtermiņa attiecību veidošanu, kur katrs projekts ir soli tuvāk jūsu uzņēmuma mērķiem.</p>
+    </div>
+  </section>
+
+  <!-- 5. MŪSU PROCESS -->
+  <section class="process">
+    <h2>Kā notiek sadarbība?</h2>
+
+    <div class="step">
+      <h3>1. Analīze un mērķu noteikšana</h3>
+      <p>Mēs sākam ar sarunu un jūsu biznesa vajadzību izvērtēšanu, lai noteiktu skaidrus un izmērāmus mērķus.</p>
+    </div>
+
+    <div class="step">
+      <h3>2. Stratēģijas izveide un izpilde</h3>
+      <p>Pielāgojam darbību plānu un sākam realizāciju ar pastāvīgu optimizāciju un testēšanu.</p>
+    </div>
+
+    <div class="step">
+      <h3>3. Rezultātu analīze un atskaite</h3>
+      <p>Regulāri nodrošinām pārskatus, sniedzam ieteikumus un pielāgojam stratēģiju nākamajiem soļiem.</p>
+    </div>
+  </section>
+
+  <!-- 6. KONTAKTI -->
+  <section class="contact" id="contact">
+    <h2>Sazinies ar mums</h2>
+    <p>Mēs esam gatavi palīdzēt jūsu uzņēmumam augt. Sazinieties ar mums, lai sāktu sadarbību un izveidotu kopīgu ceļu uz panākumiem.</p>
+    <p><strong>Adrese:</strong> Rīgas iela 12 - 36, Salaspils, Salaspils novads, LV-2121</p>
+    <p><strong>E-pasts:</strong> team@madiagnostics.org</p>
+
+    <form>
+      <input type="text" name="name" placeholder="Jūsu vārds" required>
+      <input type="email" name="email" placeholder="Jūsu e-pasts" required>
+      <textarea name="message" rows="5" placeholder="Jūsu ziņa..." required></textarea>
+      <input type="submit" value="Nosūtīt ziņu">
+    </form>
+  </section>
+
+</body>
+</html>
